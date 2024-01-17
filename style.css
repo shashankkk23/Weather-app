@@ -1,0 +1,182 @@
+/* RGB HOVER EFFECT */
+
+/* RGB EFFECT */
+
+.rgb-animate {
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+	animation-name: rgb_anim;
+}
+
+/* RGB HOVER EFFECT */
+
+/* .rgb-animate-hvr:hover {
+	animation-iteration-count: infinite;
+	animation-duration:5ms;
+	animation-name: rgb_anim;
+} */
+
+/* RGB ANIMATION EFFECT */
+
+@keyframes rgb_anim {
+	from {
+		filter: hue-rotate(0deg);
+	}
+	50% {
+		filter: hue-rotate(360deg);
+	}
+	to {
+		filter: hue-rotate(0deg);
+	}
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #212121;
+}
+.nav{
+    color: #fff;
+    display: flex;
+    padding: 15px;
+
+}
+.nav ul {
+    list-style-type: none; /* Remove default list styles */
+    margin: 0; /* Remove default margin for the unordered list */
+    padding: 0; /* Remove default padding for the unordered list */
+    display: flex; /* Use flexbox for horizontal alignment of list items */
+}
+.nav li {
+    margin-right: 100px; /* Add spacing between list items */
+}
+
+
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #da2b0c, #d8d6e3);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    
+}
+
+
+/* 
+this is the transformation code for fun only
+.card{
+    box-shadow:1px 1px;
+    perspective: 800px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    border: 1px solid black;
+  border-radius: 10px;
+}
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.front {
+  transform: rotateY(0deg);
+}
+.back {
+  transform: rotateY(180deg);
+}
+.card:hover {
+  transform: rotateY(180deg);
+} */
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #572929;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.search button img{
+    width: 16px;
+}
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+.weather h1{
+font-size: 80px;
+font-weight: 500;
+}
+.weather h2{
+font-size: 45px;
+font-weight: 400;
+margin-top: -10px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 20px;
+    margin-top: 50px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+/* for hiding all info we'll get after searching */
+.weather{
+    display: none;
+}
+
+
+
+/* Rgb effect */
+.rgb-animate {
+	animation-iteration-count: infinite;
+	animation-duration: 40s;
+	animation-name: rgb_anim;
+}
+
